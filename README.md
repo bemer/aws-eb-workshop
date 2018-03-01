@@ -1,6 +1,6 @@
-![lts logo](https://github.com/bemer/lts-workshop/blob/master/images/lts_logo.png)
+![lts logo](https://github.com/bemer/aws-eb-workshop/blob/master/images/elasticbeanstalk.png)
 
-# Welcome to the LTS Container Track
+# Welcome to the AWS Elastic Beanstalk Hands-On
 
 Hello and welcome to the Latam Tech Summit 2017 - Container Track day! This is obviously the most awaited day of the event. We know it... So here are a few things that you should know before you start:
 
@@ -31,4 +31,3 @@ Go sharp your Container skills and take over the world.
 * [4. Deploying An Application with AWS Fargate](https://github.com/bemer/lts-workshop/tree/master/04-DeployFargate)
 
 * [5. Deploying a Kubernetes Cluster with KOPS](https://github.com/bemer/lts-workshop/tree/master/05-DeployKubernetes)
-
