@@ -58,8 +58,30 @@ Here, we will be able to identify all the versions previously deployed in our en
 
     Current version # deployed: 2
 
-     #    Version Label       Date Created       Age       Description                                                                                                                                                                                                       appversion  
+     #    Version Label       Date Created       Age       Description
      2    green               2018/03/02 14:49   9 mins    Changing the color from Blue to Green  
      1    app-180302_113415   2018/03/02 11:34   3 hours   EB-CLI deploy                          
 
     (Commands: Quit, Delete, Lifecycle, ▼ ▲ ◀ ▶)
+
+## 5. Performing a Rollback
+
+If you want to execute a rollback in a deploy, you can also use the information provided by the previous command. In our example, we have two version of the same application. The first one has the label `app-180302_113415` and was created when we executed the first deploy, and the second one with the label `green` created in this chapter.
+
+To see how the rollback process works, let's redeploy our blue version. To do that, we need to use the following command:
+
+    $ eb deploy --version app-180302_113445
+
+>NOTE: when using the command `eb deploy` to perform a rollback, you need to use the `--label` option and then inform the `Version Label` of the version that you want to deploy. Because of that, a good practice is always inform a description when executing your deployments.
+
+Let's access our application and see if the rollback went successfully:
+
+    $ eb open
+
+We should see the version with the blue color.
+
+To go back to the `green` version, let's execute the same, changing the `Version Label`:
+
+    $ eb deploy --version green
+
+We should have the `green` version running again.
