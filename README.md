@@ -1,6 +1,6 @@
 ![lts logo](https://github.com/bemer/aws-eb-workshop/blob/master/images/elasticbeanstalk.png)
 
-# Welcome to the AWS Elastic Beanstalk Hands-On
+# Welcome to the AWS Elastic Beanstalk Hands-On lab
 
 Hello and welcome to the Latam Tech Summit 2017 - Container Track day! This is obviously the most awaited day of the event. We know it... So here are a few things that you should know before you start:
 
