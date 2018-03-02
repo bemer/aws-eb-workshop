@@ -1,3 +1,13 @@
+# Deploying a Java Application
+
+**Quick jump:**
+
+* [1. Tutorial overview](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#1-tutorial-overview)
+* [2. Creating an Application with EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#2-creating-an-application-with-eb-cli)
+* [3. Creating a Development Environment with EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#3-creating-an-development-environment-with-eb-cli)
+* [4. Creating the Production environment with AWS EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#4-creating-the-production-environment-with-aws-eb-cli)
+* [5. Playing with the EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#5-playing-with-the-eb-cli)
+
 ## 1. Tutorial overview
 
 This tutorial will guide you through the deployment of an Java Application using the AWS Elastic Beanstalk service. We will be using a sample application provided by Amazon Web Services.
@@ -83,7 +93,7 @@ In this stage, EB CLI will ask you if you want to enable `ssh` to your instances
     Do you want to set up SSH for your instances?
     (Y/n): n
 
-## 3. Creating an Development Environment with EB CLI
+## 3. Creating a Development Environment with EB CLI
 
 An environment is a version that is deployed onto AWS resources. Each environment runs only a single application version at a time, however you can run the same version or different versions in many environments at the same time. When you create an environment, Elastic Beanstalk provisions the resources needed to run the application version you specified.
 
