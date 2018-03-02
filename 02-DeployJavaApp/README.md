@@ -99,13 +99,13 @@ After downloading the file, extract it's contents to the project folder by using
 
 Now, run the command `eb create` to start the creation of our first environment.
 
-Kepp the Environment Name and the CNAME Prefix as `eb-workshop-dev`:
+Keep the Environment Name as `eb-workshop-dev` and change the CNAME Prefix to something like `<your_name>-eb-workshop-dev`:
 
     $ eb create
     Enter Environment Name
     (default is eb-workshop-dev):
     Enter DNS CNAME prefix
-    (default is eb-workshop-dev):
+    (default is eb-workshop-dev): <your_name>-eb-workshop-dev
 
 For the load balancer type, keep the option `1`. We will be using the classic load balancer:
 
@@ -127,7 +127,7 @@ The EB CLI will them upload your .zip file to the S3 and will start the deployme
       Environment ID: e-n93pj2upsa
       Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.7.6
       Tier: WebServer-Standard-1.0
-      CNAME: eb-workshop-dev.us-east-1.elasticbeanstalk.com
+      CNAME: <your_name>-eb-workshop-dev.us-east-1.elasticbeanstalk.com
       Updated: 2018-03-02 14:17:19.424000+00:00
     Printing Status:
     INFO: createEnvironment is starting.
@@ -156,13 +156,13 @@ It will open a web browser window with your Java Application.
 
 Since we already have a working environment, we can just clone it to another one, with the same configuration and same application. In this scenario, lets use the EB CLI to clone our development environment into a new one. In order to do so, we will use the command `eb clone`.
 
-When executing this command, EB CLI will ask you for the name of the new environment. Lets use `eb-workshop-prod`. Keep the same name for the CNAME prefix. It will start clonning your environment:
+When executing this command, EB CLI will ask you for the name of the new environment. Lets use `eb-workshop-prod`. In the CNAME prefix, using something like `<your_name>-eb-workshop-prod`. It will start clonning your environment:
 
     $ eb clone
     Enter name for Environment Clone
     (default is eb-workshop-dev-clone): eb-workshop-prod
     Enter DNS CNAME prefix
-    (default is eb-workshop-prod):
+    (default is eb-workshop-prod): <your_name>-eb-workshop-prod
 
     Environment details for: eb-workshop-prod
       Application name: eb-workshop
@@ -171,7 +171,7 @@ When executing this command, EB CLI will ask you for the name of the new environ
       Environment ID: e-umdmz8m7hm
       Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.7.6
       Tier: WebServer-Standard-1.0
-      CNAME: eb-workshop-prod.us-east-1.elasticbeanstalk.com
+      CNAME: <your_name>-eb-workshop-prod.us-east-1.elasticbeanstalk.com
       Updated: 2018-03-02 14:51:00.657000+00:00
     Printing Status:
     INFO: createEnvironment is starting.
