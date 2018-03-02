@@ -12,7 +12,7 @@ We will walk you through the very basics of Elastic Beanstalk: from installing a
 
 Everything that we wil be doing in these labs can be also done in the web interface, but our main focus today is to use the EB CLI tool.
 
-## 3) If you are using a Windows machine
+## 3) If you are using a Windows machine...
 
 We strongly recommend you to spin up a Linux EC2 instance. None of these labs were even tested in Windows environments.
 

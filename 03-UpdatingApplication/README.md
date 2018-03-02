@@ -15,6 +15,7 @@ In this chapter we are going to execute an update in the application and a deplo
 
 In order to run this, you must have completed the following steps:
 
+* [Setup Environment](https://github.com/bemer/aws-eb-workshop/tree/master/01-SetupEnvironment)
 * [Deploy a Java Application](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp)
 
 ## 2. Updating the Application
