@@ -1,6 +1,17 @@
+# Updating your Application
+
+**Quick jump:**
+
+* [1. Tutorial overview](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication#1-tutorial-overview)
+* [2. Updating the Application](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication#2-updating-the-application)
+* [3. Deploying the new application version](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication#3-deploying-the-new-application-version)
+* [4. Getting information about the version](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication#4-getting-information-about-the-version)
+* [5. Performing a Rollback](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication#5-performing-a-rollback)
+
+
 ## 1. Tutorial overview
 
-In this chapter we are going to execute an update in the application and the deploy of the new version in our development environment.
+In this chapter we are going to execute an update in the application and a deploy of the new application version in our development environment.
 
 In order to run this, you must have completed the following steps:
 
