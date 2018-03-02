@@ -45,3 +45,21 @@ Wait a few seconds until the application is deployed in your development environ
 Now, let's access our new application version with the command:
 
     $ eb open
+
+Note that the new version of our application is now deployed and the back just changed from the color Blue to Green.
+
+## 4. Getting information about the version
+
+After changing our code and deploying these changes to our environment, we can also get more information about it. In order to see the versions deployed into our environment, we can use the following command:
+
+    $ eb appversion
+
+Here, we will be able to identify all the versions previously deployed in our environment with all the informations:
+
+    Current version # deployed: 2
+
+     #    Version Label       Date Created       Age       Description                                                                                                                                                                                                       appversion  
+     2    green               2018/03/02 14:49   9 mins    Changing the color from Blue to Green  
+     1    app-180302_113415   2018/03/02 11:34   3 hours   EB-CLI deploy                          
+
+    (Commands: Quit, Delete, Lifecycle, ▼ ▲ ◀ ▶)
