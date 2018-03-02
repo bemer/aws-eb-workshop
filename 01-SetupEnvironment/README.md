@@ -17,15 +17,15 @@ The EB CLI is a command line interface for Elastic Beanstalk that provides inter
 
 Once you've installed the EB CLI and configured a repository, you can create environments with a single command:
 
-  ~/my-app$ eb create my-env
+    ~/my-app$ eb create my-env
 
 Previously, Elastic Beanstalk supported a separate CLI that provided direct access to API operations called the Elastic Beanstalk API CLI. This has been replaced with the AWS CLI, which provides the same functionality but for all AWS services' APIs.
 
 With the AWS CLI you have direct access to the Elastic Beanstalk API. The AWS CLI is great for scripting, but is not as easy to use from the command line because of the number of commands that you need to run and the number of parameters on each command. For example, creating an environment requires a series of commands:
 
-  ~$ aws elasticbeanstalk check-dns-availability --cname-prefix my-cname
-  ~$ aws elasticbeanstalk create-application-version --application-name my-application --version-label v1 --source-bundle S3Bucket=my-bucket,S3Key=php-proxy-sample.zip
-  ~$ aws elasticbeanstalk create-environment --cname-prefix my-cname --application-name my-app --version-label v1 --environment
+    ~$ aws elasticbeanstalk check-dns-availability --cname-prefix my-cname
+    ~$ aws elasticbeanstalk create-application-version --application-name my-application --version-label v1 --source-bundle S3Bucket=my-bucket,S3Key=php-proxy-sample.zip
+    ~$ aws elasticbeanstalk create-environment --cname-prefix my-cname --application-name my-app --version-label v1 --environment
 
 
 ## Install AWS CLI
