@@ -93,6 +93,10 @@ First of all, we will need to get the application that we are going to deploy in
 
     $ curl -o java-tomcat-v3.zip 'https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/samples/java-tomcat-v3.zip'
 
+After downloading the file, extract it's contents to the project folder by using the following command:
+
+    $ unzip java-tomcat-v3.zip
+
 Now, run the command `eb create` to start the creation of our first environment.
 
 Kepp the Environment Name and the CNAME Prefix as `eb-workshop-dev`:
@@ -111,4 +115,37 @@ For the load balancer type, keep the option `1`. We will be using the classic lo
     3) network
     (default is 1):
 
-The EB CLI will them upload your .zip file to the S3 and will start the deployment of your application into the development environment.
+The EB CLI will them upload your .zip file to the S3 and will start the deployment of your application into the development environment. When if finishes will should see something like this:
+
+    Creating application version archive "app-180302_111708".
+    Uploading eb-workshop/app-180302_111708.zip to S3. This may take a while.
+    Upload Complete.
+    Environment details for: eb-workshop-dev
+      Application name: eb-workshop
+      Region: us-east-1
+      Deployed Version: app-180302_111708
+      Environment ID: e-n93pj2upsa
+      Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.7.6
+      Tier: WebServer-Standard-1.0
+      CNAME: eb-workshop-dev.us-east-1.elasticbeanstalk.com
+      Updated: 2018-03-02 14:17:19.424000+00:00
+    Printing Status:
+    INFO: createEnvironment is starting.
+    INFO: Using elasticbeanstalk-us-east-1-xxxxxxxxxxxx as Amazon S3 storage bucket for environment data.
+    INFO: Created security group named: sg-342de842
+    INFO: Created load balancer named: awseb-e-n-AWSEBLoa-1C4S90GVTJ8Z2
+    INFO: Created security group named: awseb-e-n93pj2upsa-stack-AWSEBSecurityGroup-KZBMAD119HT9
+    INFO: Created Auto Scaling launch configuration named: awseb-e-n93pj2upsa-stack-AWSEBAutoScalingLaunchConfiguration-11G0MITIZ02FJ
+    INFO: Created Auto Scaling group named: awseb-e-n93pj2upsa-stack-AWSEBAutoScalingGroup-14NXHSYM2BRDQ
+    INFO: Waiting for EC2 instances to launch. This may take a few minutes.
+    INFO: Created Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:xxxxxxxxxxxx:scalingPolicy:aa34af95-55cd-4a08-af0b-b162ed104c16:autoScalingGroupName/awseb-e-n93pj2upsa-stack-AWSEBAutoScalingGroup-14NXHSYM2BRDQ:policyName/awseb-e-n93pj2upsa-stack-AWSEBAutoScalingScaleDownPolicy-L7E89GFF9Q6K
+    INFO: Created Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:xxxxxxxxxxxx:scalingPolicy:4e811fdb-2961-4b49-bf33-4f69afee2f44:autoScalingGroupName/awseb-e-n93pj2upsa-stack-AWSEBAutoScalingGroup-14NXHSYM2BRDQ:policyName/awseb-e-n93pj2upsa-stack-AWSEBAutoScalingScaleUpPolicy-SENK03AP1T4L
+    INFO: Created CloudWatch alarm named: awseb-e-n93pj2upsa-stack-AWSEBCloudwatchAlarmHigh-T7DPB3CF10F
+    INFO: Created CloudWatch alarm named: awseb-e-n93pj2upsa-stack-AWSEBCloudwatchAlarmLow-ZCA8Z8LM12D7
+    INFO: Successfully launched environment: eb-workshop-dev
+
+After the deployment, you can use EB CLI to open your application in a web browser with the command:
+
+    $ eb open
+
+It will open a web browser window with your Java Application.
