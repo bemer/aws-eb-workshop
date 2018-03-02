@@ -83,7 +83,7 @@ In this stage, EB CLI will ask you if you want to enable `ssh` to your instances
     Do you want to set up SSH for your instances?
     (Y/n): n
 
-## 3. Creating an Environment with EB CLI
+## 3. Creating an Development Environment with EB CLI
 
 An environment is a version that is deployed onto AWS resources. Each environment runs only a single application version at a time, however you can run the same version or different versions in many environments at the same time. When you create an environment, Elastic Beanstalk provisions the resources needed to run the application version you specified.
 
