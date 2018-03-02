@@ -152,29 +152,18 @@ After the deployment, you can use EB CLI to open your application in a web brows
 
 It will open a web browser window with your Java Application.
 
-## Creating the Production environment with AWS EB CLI
+## 4. Creating the Production environment with AWS EB CLI
 
-Since we already have a working environment, we can just clone it to another one, with the same configuration and same application. In this scenario, lets use the EB CLI to clone our development environment into a new one. In order to do so, we will use the command `eb clone`.
+In order to have another environment running your application, you can follow the same steps described in the previous section, but changing the environment name to `eb-workshop-prod`.
 
-When executing this command, EB CLI will ask you for the name of the new environment. Lets use `eb-workshop-prod`. In the CNAME prefix, using something like `<your_name>-eb-workshop-prod`. It will start clonning your environment:
+Also, don't forget to change the CNAME prefix to something similar to `<your_name>-eb-workshop-prod`.
 
-    $ eb clone
-    Enter name for Environment Clone
-    (default is eb-workshop-dev-clone): eb-workshop-prod
-    Enter DNS CNAME prefix
-    (default is eb-workshop-prod): <your_name>-eb-workshop-prod
+After creating the new environment, you will be able to list the current environments with the command:
 
-    Environment details for: eb-workshop-prod
-      Application name: eb-workshop
-      Region: us-east-1
-      Deployed Version: app-180302_113445
-      Environment ID: e-umdmz8m7hm
-      Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.7.6
-      Tier: WebServer-Standard-1.0
-      CNAME: <your_name>-eb-workshop-prod.us-east-1.elasticbeanstalk.com
-      Updated: 2018-03-02 14:51:00.657000+00:00
-    Printing Status:
-    INFO: createEnvironment is starting.
-    INFO: Using elasticbeanstalk-us-east-1-996278879643 as Amazon S3 storage bucket for environment data.
-    INFO: Created security group named: sg-385f9a4e
-     -- Events -- (safe to Ctrl+C)
+    $ $ eb list
+    \* eb-workshop-dev
+    eb-workshop-prod
+
+>NOTE: note that there is a `*` in front of your development environment. It means that every command executed in your terminal will be applied in this environment.
+
+## 5. Playing with the EB CLI
