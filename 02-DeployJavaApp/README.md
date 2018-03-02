@@ -167,3 +167,15 @@ After creating the new environment, you will be able to list the current environ
 >NOTE: note that there is a `*` in front of your development environment. It means that every command executed in your terminal will be applied in this environment.
 
 ## 5. Playing with the EB CLI
+
+Now that you already have two environments created, take some time to play with the EB CLI commands. Here are a few that you can use:
+
+* eb appversion
+* eb console
+* eb events
+* eb health
+* eb list
+* eb logs
+* eb status
+
+If you want to get more information about the Elastic Beanstalk commands, you can go to this URL: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-cmd-commands.html
