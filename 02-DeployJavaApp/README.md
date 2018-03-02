@@ -4,7 +4,7 @@
 
 * [1. Tutorial overview](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#1-tutorial-overview)
 * [2. Creating an Application with EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#2-creating-an-application-with-eb-cli)
-* [3. Creating a Development Environment with EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#3-creating-an-development-environment-with-eb-cli)
+* [3. Creating a Development Environment with EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#3-creating-a-development-environment-with-eb-cli)
 * [4. Creating the Production environment with AWS EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#4-creating-the-production-environment-with-aws-eb-cli)
 * [5. Playing with the EB CLI](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp#5-playing-with-the-eb-cli)
 
