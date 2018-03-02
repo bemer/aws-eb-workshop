@@ -10,7 +10,7 @@
 
 ## 1. Tutorial overview
 
-This tutorial will guide you through the deployment of an Java Application using the AWS Elastic Beanstalk service. We will be using a sample application provided by Amazon Web Services.
+This tutorial will guide you through the deployment of an Java Application using the AWS Elastic Beanstalk service. We will be using a sample web application provided by Amazon Web Services that runs in an environment with a Tomcat and Java 8.
 
 In order to run this tutorial, you must have completed the following steps:
 
