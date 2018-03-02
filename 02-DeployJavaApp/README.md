@@ -144,8 +144,37 @@ The EB CLI will them upload your .zip file to the S3 and will start the deployme
     INFO: Created CloudWatch alarm named: awseb-e-n93pj2upsa-stack-AWSEBCloudwatchAlarmLow-ZCA8Z8LM12D7
     INFO: Successfully launched environment: eb-workshop-dev
 
+>NOTE: when executing this setup, Elastic Beanstalk will create everything that your application need to work, such as the Load Balancer, Auto Scaling Group, Security Group, CloudWatch Alarms and so one. You can see all the information about what was created in this list.
+
 After the deployment, you can use EB CLI to open your application in a web browser with the command:
 
     $ eb open
 
 It will open a web browser window with your Java Application.
+
+## Creating the Production environment with AWS EB CLI
+
+Since we already have a working environment, we can just clone it to another one, with the same configuration and same application. In this scenario, lets use the EB CLI to clone our development environment into a new one. In order to do so, we will use the command `eb clone`.
+
+When executing this command, EB CLI will ask you for the name of the new environment. Lets use `eb-workshop-prod`. Keep the same name for the CNAME prefix. It will start clonning your environment:
+
+    $ eb clone
+    Enter name for Environment Clone
+    (default is eb-workshop-dev-clone): eb-workshop-prod
+    Enter DNS CNAME prefix
+    (default is eb-workshop-prod):
+
+    Environment details for: eb-workshop-prod
+      Application name: eb-workshop
+      Region: us-east-1
+      Deployed Version: app-180302_113445
+      Environment ID: e-umdmz8m7hm
+      Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.7.6
+      Tier: WebServer-Standard-1.0
+      CNAME: eb-workshop-prod.us-east-1.elasticbeanstalk.com
+      Updated: 2018-03-02 14:51:00.657000+00:00
+    Printing Status:
+    INFO: createEnvironment is starting.
+    INFO: Using elasticbeanstalk-us-east-1-996278879643 as Amazon S3 storage bucket for environment data.
+    INFO: Created security group named: sg-385f9a4e
+     -- Events -- (safe to Ctrl+C)
