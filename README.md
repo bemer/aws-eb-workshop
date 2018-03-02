@@ -2,32 +2,28 @@
 
 # Welcome to the AWS Elastic Beanstalk Hands-On lab
 
-Hello and welcome to the Latam Tech Summit 2017 - Container Track day! This is obviously the most awaited day of the event. We know it... So here are a few things that you should know before you start:
+Hello and welcome to the AWS Elastic Beanstalk Hands-On lab! Before starting this labs, there are a few things that you should know:
 
-## 1) It's all about containers!
+## 1) It's all about cli!
 
-We will walk you through the very basics of containers: from installing and configuring Docker in your machine, running containers locally, till finally deploying them in AWS.
+We will walk you through the very basics of Elastic Beanstalk: from installing and configuring the applications needed in your machine, deploying your applications in an Elastic Beanstalk Environment and creating a CI/CD pipeline.
 
-## 2) If you are using a Windows machine (srsly?)
+## 2) If you are using a Windows machine
 
 We strongly recommend you to spin up a Linux EC2 instance. None of these labs were even tested in Windows environments.
 
-## 3) This is not everything we have for today. There's more!
-
-You know that thing called Kubernetes? I bet you kow. Be ready, because there's also an amazing lab waiting for you. This lab will start at 3PM and it's going to be nuts!
-
-## 4) Enough of jibber jabber...
+## 3) Enough of jibber jabber...
 
 Go sharp your Container skills and take over the world.
 
-## 5) Please, run this lab in the exactly order as follows:
+## 4) Please, run this lab in the exactly order as follows:
 
-* [1. Setup Environments](https://github.com/bemer/lts-workshop/tree/master/01-SetupEnvironment)
+* [1. Setup Environments](https://github.com/bemer/aws-eb-workshop/tree/master/01-SetupEnvironment)
 
-* [2. Creating Your Docker Image](https://github.com/bemer/lts-workshop/tree/master/02-CreatingDockerImage)
+* [2. Deploying a Java Application](https://github.com/bemer/aws-eb-workshop/tree/master/02-DeployJavaApp)
 
-* [3. Running An ECS Cluster](https://github.com/bemer/lts-workshop/tree/master/03-DeployEcsCluster)
+* [3. Updating your Application](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication)
 
-* [4. Deploying An Application with AWS Fargate](https://github.com/bemer/lts-workshop/tree/master/04-DeployFargate)
+* [4. Blue/Green Deployments](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments)
 
-* [5. Deploying a Kubernetes Cluster with KOPS](https://github.com/bemer/lts-workshop/tree/master/05-DeployKubernetes)
+* [5. Creating a CI/CD Pipeline](https://github.com/bemer/aws-eb-workshop/tree/master/05-ContinuousIntegration)
