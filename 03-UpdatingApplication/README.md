@@ -12,11 +12,11 @@ Since we have the application source code in our computer, let's start changing 
 
 Using a text editor of your choice, open the file `index.jsp` located in the `~/eb-workshop/` directory. Change the line `76` from:
 
-    background-image: -webkit-gradient(radial, 0 0, 1, 0 0, 500, from(`#6ac9f9`), to(#0188cc));
+    background-image: -webkit-gradient(radial, 0 0, 1, 0 0, 500, from(#6ac9f9), to(#0188cc));
 
 To:
 
-    background-image: -webkit-gradient(radial, 0 0, 1, 0 0, 500, from(`#01cc49`), to(`#01cc49`));
+    background-image: -webkit-gradient(radial, 0 0, 1, 0 0, 500, from(#01cc49), to(#01cc49));
 
 
 After this, just save the file.
