@@ -16,7 +16,7 @@ In order to run this tutorial, you must have completed the following steps:
 
 * [Setup Environment](https://github.com/bemer/aws-eb-workshop/tree/master/01-SetupEnvironment)
 
-> NOTE: The `ebcli` can use the AWS credentials from your environment. In order to use it, don't forget to properly configure your awscli, using the command `aws configure` as noted here: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+> NOTE: The `ebcli` can use the AWS credentials from your environment. In order to use it, don't forget to properly configure your awscli, using the command `aws configure` as described here: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
 ## 2. Creating an Application with EB CLI
 
