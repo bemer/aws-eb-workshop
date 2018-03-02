@@ -14,7 +14,7 @@ We strongly recommend you to spin up a Linux EC2 instance. None of these labs we
 
 ## 3) Enough of jibber jabber...
 
-Go sharp your Container skills and take over the world.
+Go sharp your Elastic Beanstalk skills and take over the world.
 
 ## 4) Please, run this lab in the exactly order as follows:
 
