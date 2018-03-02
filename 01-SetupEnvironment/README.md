@@ -15,16 +15,16 @@ During this workshop we will interact with some AWS API's. Having the latest ver
 
 Instructions to install the AWS CLI are available here: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
 
-## Install git
+## Install Git
 
 Sometimes will be easier if you just clone this repo, instead of copying the files. Having the git installed is not a mandatory requisite, but it may help you.
 
 Download and install here: https://git-scm.com/downloads
 You can have more information about git here: https://git-scm.com/book/en/v1/Getting-Started
 
-## The Elastic Beanstalk Command Line Interface (EB CLI)
+## Install EB CLI
 
-The EB CLI is a command line interface for Elastic Beanstalk that provides interactive commands that simplify creating, updating and monitoring environments from a local repository. Use the EB CLI as part of your everyday development and testing cycle as an alternative to the AWS Management Console.
+The Elastic Beanstalk Command Line Interface (EB CLI) is a command line interface for Elastic Beanstalk that provides interactive commands that simplify creating, updating and monitoring environments from a local repository. Use the EB CLI as part of your everyday development and testing cycle as an alternative to the AWS Management Console.
 
 You will find the instructions to install the EB CLI in this link: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
 
