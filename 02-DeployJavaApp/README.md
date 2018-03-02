@@ -14,7 +14,7 @@ In Elastic Beanstalk, an application is a logical collection of Elastic Beanstal
 
 The first step here is to create a new folder, that will be our working directory. This directory is going to be named `eb-workshop`. In your terminal, run the following command:
 
-    $mkdir ~/eb-workshop && cd ~/eb-workshop
+    $ mkdir ~/eb-workshop && cd ~/eb-workshop
 
 Now, let's start a new environment, with the EB CLI. Let's do it using the command:
 
@@ -88,3 +88,27 @@ In this stage, EB CLI will ask you if you want to enable `ssh` to your instances
 An environment is a version that is deployed onto AWS resources. Each environment runs only a single application version at a time, however you can run the same version or different versions in many environments at the same time. When you create an environment, Elastic Beanstalk provisions the resources needed to run the application version you specified.
 
 Let's them use EB CLI to create the first environment for our application, that will be the `development` environment.
+
+First of all, we will need to get the application that we are going to deploy in this environment. Since we will be using a sample Java application, let's download it to our current directory using the following command:
+
+    $ curl -o java-tomcat-v3.zip 'https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/samples/java-tomcat-v3.zip'
+
+Now, run the command `eb create` to start the creation of our first environment.
+
+Kepp the Environment Name and the CNAME Prefix as `eb-workshop-dev`:
+
+    $ eb create
+    Enter Environment Name
+    (default is eb-workshop-dev):
+    Enter DNS CNAME prefix
+    (default is eb-workshop-dev):
+
+For the load balancer type, keep the option `1`. We will be using the classic load balancer:
+
+    Select a load balancer type
+    1) classic
+    2) application
+    3) network
+    (default is 1):
+
+The EB CLI will them upload your .zip file to the S3 and will start the deployment of your application into the development environment.
