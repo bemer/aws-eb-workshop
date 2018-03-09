@@ -1,7 +1,15 @@
 ## 1. Tutorial Overview
 
-Now, let's use what we've learned in the previous steps to create a blue/green deployment
 
+**Quick jump:**
+
+* [1. Tutorial overview](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#1-tutorial-overview)
+* [2. Creating a new application version](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#2-creating-a-new-application-version)
+* [3. Listing the URL's](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#3-listing-the-urls)
+* [4. Swapping URL's](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#4-swapping-urls)
+
+
+Now, let's use what we've learned in the previous steps to create a blue/green deployment
 
 In order to run this, you must have completed the following steps:
 
