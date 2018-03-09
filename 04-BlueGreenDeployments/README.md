@@ -1,5 +1,4 @@
-## 1. Tutorial Overview
-
+# Blue/Green Deployments with AWS Elastic Beanstalk
 
 **Quick jump:**
 
@@ -8,6 +7,8 @@
 * [3. Listing the URL's](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#3-listing-the-urls)
 * [4. Swapping URL's](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments#4-swapping-urls)
 
+
+## 1. Tutorial Overview
 
 Now, let's use what we've learned in the previous steps to create a blue/green deployment
 
