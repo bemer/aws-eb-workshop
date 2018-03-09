@@ -57,3 +57,45 @@ AWS CodeBuild is a fully managed build service that compiles source code, runs t
 In order to start taking advantage of this service, open the CodeBuild product page in the AWS Console. You will face the `Build projects` page. In this page, click in `Create project`:
 
 ![create-project](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/create-project.png)
+
+Now, we need to fill all the fields. Here are the informations you will need to enter:
+
+    Project name: eb-workshop
+    Source provider: AWS CodeCommit
+    Repository: <Your CodeCommit Repository name>
+    Environment image: Use an image managed by AWS CodeBuild
+    Operating system:  Ubuntu
+    Runtime: Docker
+    Runtime version: aws/codebuild/docker:17.09.0
+
+Them, select the option `Insert build commands` and click in switch to editor. You will need to add the following content:
+
+    version: 0.2
+    phases:
+
+      build:
+        commands:
+           \- zip -r eb-workshop-app.zip ./*
+    artifacts:
+      files:
+        \- eb-workshop-app.zip
+
+
+Now, in `Artifacts`, select:
+
+    Type: Amazon S3
+    Path: artifacts/
+    Namespace type: Build ID
+    Bucket name: eb-workshop-artifacts
+
+And finally, click in `Continue` and them in `Save`.
+
+You will be redirected to the `Build projects` screen, and now you will see your project. If you want to validate all the configurations, click in `Start build`:
+
+![start-build](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/start-build.png)
+
+Now, choose your branch (that will be `master`) and click in `Start build`:
+
+![start-build-2](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/start-build-2.png)
+
+After a few seconds, your build process will be finished and you will be able to see a zip file in your S3 bucket.
