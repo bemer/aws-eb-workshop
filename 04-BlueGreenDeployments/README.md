@@ -40,3 +40,5 @@ In order to run a Blue/Green deployment, we will swap the URL for both environme
 Note that if we just have two environments, the command will not ask for anything else, but if we have more, it will ask us to point what is the environment that we want to change the URL with.
 
 After executing this command, try to access both URL's again. You should see a different version of the application when using the same link.
+
+You can also check that the URL's were changed using the AWS Console.
