@@ -1,11 +1,15 @@
 # Creating a CI/CD Pipeline on AWS for Elastic Beanstalk
 
-In this section you will create a CI/CD Pipeline on AWS for yuor java application using CodeCommit, CodeBuild, CodeDeploy and CodePipeline. This application will be deployed on Elastic Beanstalk.
+In this section you will create a CI/CD Pipeline on AWS for your java application using CodeCommit, CodeBuild, CodeDeploy and CodePipeline. This application will be deployed on Elastic Beanstalk.
 
 
 ## 1) Create a Git Repository
 
-On the AWS console, go to the CodeCommit page and click on the Create Repository Button.
+On the AWS console, go to the CodeCommit page and click on the `Get started` Button:
+
+![ccgettingstarted](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/ccgetstarted.png)
+
+
 Choose a repository name and create it. You can skip the next step.
 
 ## 2) Clone the repository
