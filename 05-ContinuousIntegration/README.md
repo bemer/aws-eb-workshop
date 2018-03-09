@@ -99,3 +99,35 @@ Now, choose your branch (that will be `master`) and click in `Start build`:
 ![start-build-2](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/start-build-2.png)
 
 After a few seconds, your build process will be finished and you will be able to see a zip file in your S3 bucket.
+
+![build-completed](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/build-completed.png)
+
+## 4. Creating a CodePipeline
+
+AWS CodePipeline is a continuous delivery service you can use to model, visualize, and automate the steps required to release your software.
+
+So, let's create our pipeline that will deploy our application in the Elastic Beanstalk environment.
+
+Open your console and go to the `CodePipeline` page. There, click in `Get Started`.
+
+Now, add a name to your Pipeline and click in `Next`:
+
+![code-pipeline-name](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/code-pipeline-name.png)
+
+Now, select `AWS CodeCommit` as your Source provider and your repository with the branch `master`. Click in `Next step`:
+
+![source-location](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/source-location.png)
+
+In the `Build` scree, select `AWS CodeBuild` as the Build provider and them the `eb-workshop` project that we just created:
+
+![build-provider](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/build-provider.png)
+
+On the `Deploy`, select `AWS Elastic Beanstalk` as your Deployment provider, them your application and the environment prod:
+
+![deployment-provider](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/deployment-provider.png)
+
+In the `Service Role` screen, just click in `Create role`. You will be redirected to a new screen, where you just need to create in `Allow`.
+
+![create-role](https://github.com/bemer/aws-eb-workshop/blob/master/05-ContinuousIntegration/images/create-role.png)
+
+In the review screen, just click in `Create pipeline`.
