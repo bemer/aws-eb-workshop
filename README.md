@@ -6,7 +6,7 @@ Hello and welcome to the AWS Elastic Beanstalk Hands-On lab! Before starting thi
 
 ## 1) It's all about Elastic Beanstalk!
 
-We will walk you through the very basics of Elastic Beanstalk: from installing and configuring the applications needed in your machine, deploying your applications in an Elastic Beanstalk Environment and creating a CI/CD pipeline.
+We will walk you through the very basics of Elastic Beanstalk: from installing and configuring the applications needed in your machine, deploying your applications in an Elastic Beanstalk Environment and executing blue/green deployments.
 
 ## 2) Let's use the CLI
 
@@ -29,5 +29,3 @@ Go sharp your Elastic Beanstalk skills and take over the world.
 * [3. Updating your Application](https://github.com/bemer/aws-eb-workshop/tree/master/03-UpdatingApplication)
 
 * [4. Blue/Green Deployments](https://github.com/bemer/aws-eb-workshop/tree/master/04-BlueGreenDeployments)
-
-* [5. Creating a CI/CD Pipeline](https://github.com/bemer/aws-eb-workshop/tree/master/05-ContinuousIntegration)
